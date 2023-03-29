@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="/index.html" method="GET">
+            <h2>How can we help you?</h2>
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" required="">
+            <label for="email">Your E-Mail Address</label>
+            <input type="email" name="email" id="email" required>
+            <label for="number">Your Phone Number</label>
+            <input type="tel" name="phone" id="number" required minlength="5" > 
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="4" minlength="5" maxlength="200"></textarea>
+            <label for="dropdown">How did you find us?</label>
+            <select name="drop" id="dropdown" required>
+                <option value="web">Web Search</option>
+                <option value="word">Word Of Mouth</option>
+                <option value="other">Other</option>
+            </select> 
+            <h2><strong>How should we reply?</strong></h2>
+            <div class="verify">
+                <input type="radio" id="call" name="nishant" value="calling" required>
+                <label for="call">Call Me</label>
+            </div>
+            <div class="verify">
+                <input type="radio" id="email" name="nishant" value="gmail" required>
+                <label for="call">Send me an email</label>
+            </div>
+            <div class="verify">
+                <input type="radio" id="no" name="nishant" value="no-reply" required>
+                <label for="call">Don't Reply</label>
+            </div>
+            <hr>
+            <div class="verify">
+                <input type="checkbox" id="check" name="config" required>
+                <label for="check">Accept Terms</label>
+            </div>
+            <hr>
+            <div class="footer">
+                <button type="reset" class="empty">Clear</button>
+                <button type="submit" class="filled">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
